@@ -22,6 +22,10 @@ button{
     width: 90px;
 }
 
+.dance {
+    transform: translate(0px,-10px);
+}
+
 .olive {
     background:olivedrab;
 }
