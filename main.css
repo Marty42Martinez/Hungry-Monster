@@ -1,0 +1,25 @@
+button{
+    margin:3px;
+    border-radius: 7px;
+    height: 30px;
+    font-size: 18px;
+}
+.face{
+    
+}
+
+.olive {
+    background:olivedrab;
+}
+.steel{
+    background: rgb(108, 141, 168);
+}
+.copper{
+    background: rgba(223, 120, 4, 0.788);
+}
+.gold{
+    background: rgb(248, 209, 37);
+} 
+.cobalt{
+    background: rgba(16, 16, 161, 0.788);
+}
