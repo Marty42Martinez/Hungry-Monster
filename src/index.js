@@ -1,8 +1,12 @@
 const foodArray = ['olive','steel','copper','gold','cobalt'];
 const feedButtonContainer = document.getElementById('feed-button-container');
+const danceButtonContainer = document.getElementById('dance-button-container');
 
 function feedMonster(food) {
-    
+    const bodySegment = document.createElement('span');
+    const monsterContainer = document.getElementById('monster-container');
+    bodySegment.classList.add('segment',food);
+    monsterContainer.appendChild(bodySegment);
 }
 
 

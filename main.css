@@ -5,12 +5,21 @@ button{
     font-size: 18px;
 }
 .face{
+    display: inline-block;
     margin: 10px;
     border: 2px solid black;
     background: brown;
     border-radius: 100px 100px 30px 30px;
     height: 150px;
     width: 120px;
+}
+.segment{
+    display: inline-block;
+    border: 2px solid black;
+    margin-left: -30px;
+    border-radius: 50px;
+    height: 90px;
+    width: 90px;
 }
 
 .olive {
@@ -20,11 +29,11 @@ button{
     background: rgb(108, 141, 168);
 }
 .copper{
-    background: rgba(223, 120, 4, 0.788);
+    background: rgba(223, 120, 4);
 }
 .gold{
     background: rgb(248, 209, 37);
 } 
 .cobalt{
-    background: rgba(16, 16, 161, 0.788);
+    background: rgba(16, 16, 161);
 }
