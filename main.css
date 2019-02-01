@@ -13,20 +13,37 @@ button{
     height: 150px;
     width: 120px;
 }
+
+#left-eye{
+    background: black;
+    display:inline-block;
+    border-radius: 30px;
+    height: 15px;
+    width: 15px;
+    transform: translate(30px, 25px);
+}
+#right-eye{
+    background: black;
+    display:inline-block;
+    border-radius: 30px;
+    height: 15px;
+    width: 15px;
+    transform: translate(55px, 25px);
+}
 .segment{
     display: inline-block;
-    border: 2px solid black;
     margin-left: -30px;
     border-radius: 50px;
     height: 90px;
     width: 90px;
+    transform: translate(0,135px);
 }
 
 .dance {
-    transform: translate(0px,-10px);
+    transform: translate(5px,120px);
 }
 
-.olive {
+.orc-forge{
     background:olivedrab;
 }
 .steel{

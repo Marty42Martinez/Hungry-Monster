@@ -1,4 +1,4 @@
-const foodArray = ['olive','steel','copper','gold','cobalt'];
+const foodArray = ['orc-forge','steel','copper','gold','cobalt'];
 const feedButtonContainer = document.getElementById('feed-button-container');
 const danceButtonContainer = document.getElementById('dance-button-container');
 
