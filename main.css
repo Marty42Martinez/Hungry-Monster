@@ -4,6 +4,11 @@ button{
     height: 30px;
     font-size: 18px;
 }
+#monster-container{
+    overflow:hidden;
+    height: 230px;
+    width:auto;
+}
 .face{
     display: inline-block;
     margin: 10px;
@@ -12,6 +17,7 @@ button{
     border-radius: 100px 100px 30px 30px;
     height: 150px;
     width: 120px;
+    /* transform: translateY(-30px); */
 }
 
 #left-eye{
@@ -30,13 +36,22 @@ button{
     width: 15px;
     transform: translate(55px, 25px);
 }
+#mouth{
+    background:black;
+    display: inline-block;
+    border-radius: 0px 0px 50px 50px;
+    height: 12px;
+    width: 70px;
+    transform: translate(-15px,70px);
+}
 .segment{
     display: inline-block;
+    position: relative;
+    top: 135px;
     margin-left: -30px;
     border-radius: 50px;
     height: 90px;
     width: 90px;
-    transform: translate(0,135px);
 }
 
 .dance {

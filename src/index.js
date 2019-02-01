@@ -12,6 +12,7 @@ function createButton(foodCategory, type, parent) {
             newButton.addEventListener('click', function(){
                 feedMonster(foodCategory);
             })
+            
             break;
 
         case 'dance':
