@@ -1,48 +1,53 @@
 button{
-    margin:3px;
+    margin:15px;
     border-radius: 7px;
-    height: 30px;
-    font-size: 18px;
+    height: 40px;
+    font-size: 20px;
 }
 #monster-container{
     overflow:hidden;
     height: 230px;
     width:auto;
 }
-.face{
+#face{
     display: inline-block;
     margin: 10px;
+    position: static;
     border: 2px solid black;
     background: brown;
     border-radius: 100px 100px 30px 30px;
     height: 150px;
     width: 120px;
-    /* transform: translateY(-30px); */
 }
-
 #left-eye{
     background: black;
+    position: relative;
+    top: 25px;
+    left:30px;
     display:inline-block;
     border-radius: 30px;
     height: 15px;
     width: 15px;
-    transform: translate(30px, 25px);
 }
 #right-eye{
     background: black;
+    position: relative;
+    top: 25px;
+    left:55px;
     display:inline-block;
     border-radius: 30px;
     height: 15px;
     width: 15px;
-    transform: translate(55px, 25px);
 }
 #mouth{
     background:black;
+    position: relative;
+    top: 70px;
+    left:-13px;
     display: inline-block;
     border-radius: 0px 0px 50px 50px;
     height: 12px;
     width: 70px;
-    transform: translate(-15px,70px);
 }
 .segment{
     display: inline-block;
@@ -55,7 +60,7 @@ button{
 }
 
 .dance {
-    transform: translate(5px,120px);
+    transform: translate(5px,-15px);
 }
 
 .orc-forge{
@@ -72,4 +77,7 @@ button{
 } 
 .cobalt{
     background: rgba(16, 16, 161);
+}
+.wave{
+    background: rgb(230, 43, 121);
 }

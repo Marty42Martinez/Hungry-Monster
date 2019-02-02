@@ -1,26 +1,37 @@
-const foodArray = ['orc-forge','steel','copper','gold','cobalt'];
+const foodArray = ['orc-forge', 'steel', 'copper', 'gold', 'cobalt'];
 const feedButtonContainer = document.getElementById('feed-button-container');
 const danceButtonContainer = document.getElementById('dance-button-container');
 
-function createButton(foodCategory, type, parent) {
+function createButton(buttonCategory, type, parent) {
     const newButton = document.createElement('button');
-    newButton.textContent = foodCategory;
-    newButton.value = foodCategory;
+    newButton.textContent = buttonCategory;
+    newButton.value = buttonCategory;
     switch (type) {
         case 'food':
-            newButton.classList.add(foodCategory);
+            newButton.classList.add(buttonCategory);
             newButton.addEventListener('click', function(){
-                feedMonster(foodCategory);
-            })
-            
+                feedMonster(buttonCategory);
+            });
+            newButton.addEventListener('mouseover', function() {
+                changeMouth('open');
+            });
+            newButton.addEventListener('mouseout', function() {
+                changeMouth('close');
+            });
             break;
 
         case 'dance':
-            newButton.classList.add(foodCategory);
+            newButton.classList.add(buttonCategory);
             newButton.addEventListener('click', function(){
-                danceAction(foodCategory);
-            })
+                danceAction(buttonCategory);
+            });
             break;
+        // case 'wave':
+        //     newButton.classList.add(buttonCategory);
+        //     newButton.addEventListener('click', function() {
+        //         bodyWave('single');
+        //     });
+        //     break;
     }
     parent.appendChild(newButton);
 }
@@ -45,9 +56,22 @@ function danceAction(foodCategory) {
     }
 }
 
+function changeMouth(state) {
+    const mouth = document.getElementById('mouth');
+    if(state === 'open') {
+        // mouth.classList.add('open-mouth');
+        mouth.style.height = '38px';
+        mouth.style.borderRadius = '30px 30px 15px 15px';
+    } else {
+        mouth.style.height = '12px';
+        mouth.style.borderRadius = '0px 0px 50px 50px';
+    }
+}
+
 
 for(let i = 0; i < foodArray.length; i++) {
     const food = foodArray[i];
     createButton(food,'food',feedButtonContainer);
     createButton(food,'dance',danceButtonContainer);
 }
+//createButton('wave','wave',danceButtonContainer);
